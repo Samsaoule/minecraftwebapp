@@ -9,6 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@mdi/font": "^6.6.96",
     "core-js": "^3.19.3",
     "nuxt": "^2.15.8",
     "ts-loader": "~8.2.0",

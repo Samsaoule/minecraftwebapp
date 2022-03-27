@@ -3,7 +3,7 @@
     <v-col cols="12" sm="8" md="6">
 
       <v-card>
-        Home
+        About
       </v-card>
     </v-col>
   </v-row>
@@ -13,7 +13,8 @@
 import { Component, Vue } from 'vue-property-decorator'
 
 @Component
-export default class Index extends Vue {
+export default class About extends Vue {
+  myDataProperty = 'Data Property'
 
 }
 </script>
