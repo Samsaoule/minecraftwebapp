@@ -1,18 +1,19 @@
 <template>
   <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-
-      <v-card>
-        Home
-      </v-card>
+    <v-col>
+      <TitleSection></TitleSection>
+      <ForWhatSection></ForWhatSection>
     </v-col>
   </v-row>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-
-@Component
+import TitleSection from "~/components/index/TitleSection.vue";
+import ForWhatSection from "~/components/index/ForWhatSection.vue";
+@Component({
+  components: {ForWhatSection, TitleSection}
+})
 export default class Index extends Vue {
 
 }

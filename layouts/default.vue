@@ -4,7 +4,6 @@
       <v-card
         color="23272A"
         class="mx-auto overflow-hidden"
-        height="1080"
       >
         <v-app-bar
           color="343434"
@@ -14,18 +13,28 @@
 
           <v-tabs align-with-title>
             <v-tab @click="goTo('')">
-              <v-icon>mdi-home</v-icon> Accueil
+              <v-icon class="mr-2">mdi-home</v-icon> Accueil
             </v-tab>
             <v-tab @click="goTo('mods')">
-              <v-icon>mdi-playlist-star</v-icon> Mods
+              <v-icon class="mr-2">mdi-playlist-star</v-icon> Mods
             </v-tab>
             <v-tab @click="goTo('about')">
-              <v-icon>mdi-information-outline</v-icon> À propos
+              <v-icon class="mr-2">mdi-information-outline</v-icon> À propos
             </v-tab>
           </v-tabs>
           <v-spacer></v-spacer>
+          <v-btn
+            color="blue-grey"
+            class="mx-4 white--text"
+            fab
+            text
+          >
+            <v-icon color="#738ADB" large dark>
+              mdi-discord
+            </v-icon>
+          </v-btn>
           <v-btn color="primary" @click="goTo('download')">
-            <v-icon>mdi-download</v-icon> Télécharger le launcher
+            <v-icon class="mr-2">mdi-download</v-icon> Télécharger le launcher
           </v-btn>
         </v-app-bar>
 
@@ -69,9 +78,7 @@
             </v-list-item-group>
           </v-list>
         </v-navigation-drawer>
-
         <Nuxt />
-
       </v-card>
     </v-main>
   </v-app>
