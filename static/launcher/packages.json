@@ -1,0 +1,12 @@
+{
+  "minimumVersion" : 1,
+  "packages" : [
+    {
+      "title" : "Valandir",
+      "name" : "Valandir",
+      "version" : "2022-04-02-14-29-58",
+      "location" : "valandir.json",
+      "priority" : 0
+    }
+  ]
+}
