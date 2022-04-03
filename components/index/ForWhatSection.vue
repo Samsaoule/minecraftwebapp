@@ -1,6 +1,6 @@
 <template>
   <v-card color="#141414" class="section-2">
-    <div class="minecrafter-section-title text-center pt-8 mx-2">
+    <div class="minecrafter-section-title text-center mx-2">
       Pourquoi
     </div>
     <div class="minecrafter-section-subtitle text-center mb-8 mx-2">

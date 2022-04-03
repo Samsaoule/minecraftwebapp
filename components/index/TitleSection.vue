@@ -1,19 +1,17 @@
 <template>
-  <div>
-    <v-card>
-      <v-parallax height="700" class="section-1" src="./title-section-bg.png">
-        <div class="d-flex justify-center mt-8">
-          <v-img class="flex-grow-0" width="250px" contain src="./logo-valandir.png"></v-img>
-        </div>
-        <div class="minecrafter-title text-center mt-2 mx-2">
-          Valandir
-        </div>
-        <div class="catch-phrase text-center mx-2">
-          Venez faire partie de ce monde moddé à nos côtés !
-        </div>
-      </v-parallax>
-    </v-card>
-  </div>
+  <v-card>
+    <v-parallax height="700" class="section-1" src="./title-section-bg.png">
+      <div class="d-flex justify-center mt-8">
+        <v-img class="flex-grow-0" width="250px" contain src="./logo-valandir.png"></v-img>
+      </div>
+      <div class="minecrafter-title text-center mt-2 mx-2">
+        Valandir
+      </div>
+      <div class="catch-phrase text-center mx-2">
+        Venez faire partie de ce monde moddé à nos côtés !
+      </div>
+    </v-parallax>
+  </v-card>
 </template>
 
 <script lang="ts">
