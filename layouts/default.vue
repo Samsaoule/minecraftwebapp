@@ -6,7 +6,7 @@
         class="mx-auto overflow-hidden"
       >
         <v-app-bar
-          color="343434"
+          color="#161616"
           dark
         >
           <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>

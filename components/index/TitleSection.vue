@@ -1,9 +1,9 @@
 <template>
   <div>
     <v-card>
-      <v-img class="section-1" src="./title-section-bg.png">
+      <v-parallax height="700" class="section-1" src="./title-section-bg.png">
         <div class="d-flex justify-center mt-8">
-          <v-img class="flex-grow-0" contain src="./logo-valandir.png"></v-img>
+          <v-img class="flex-grow-0" width="250px" contain src="./logo-valandir.png"></v-img>
         </div>
         <div class="minecrafter-title text-center mt-2 mx-2">
           Valandir
@@ -11,7 +11,7 @@
         <div class="catch-phrase text-center mx-2">
           Venez faire partie de ce monde moddé à nos côtés !
         </div>
-      </v-img>
+      </v-parallax>
     </v-card>
   </div>
 </template>
@@ -33,12 +33,12 @@ export default class TitleSection extends Vue {
 
 .minecrafter-title {
   font-family: "Minecrafter",serif;
-  font-size: 70px;
+  font-size: 90px;
   -webkit-text-stroke: 2px #000000;
 }
 
 .catch-phrase {
-  font-size: 20px ;
+  font-size: 34px ;
   font-weight: 400;
   letter-spacing: 0.0333333333em;
   line-height: 1.25rem;
