@@ -7,8 +7,8 @@
       Suis juste les instructions
     </div>
     <div class="d-flex justify-center">
-      <v-btn x-large color="primary" @click="goTo('download')">
-        <v-icon class="mr-2">mdi-download</v-icon> Télécharger le launcher
+      <v-btn disabled="true" x-large color="primary" @click="goTo('download')">
+        <v-icon class="mr-2">mdi-download</v-icon> A venir
       </v-btn>
     </div>
   </v-card>

@@ -15,10 +15,13 @@
             <v-tab @click="goTo('')">
               <v-icon class="mr-2">mdi-home</v-icon> Accueil
             </v-tab>
+            <v-tab @click="goTo('objectives')">
+              <v-icon class="mr-2">mdi-flag</v-icon> Objectifs
+            </v-tab>
             <v-tab @click="goTo('mods')">
               <v-icon class="mr-2">mdi-playlist-star</v-icon> Mods
             </v-tab>
-            <v-tab @click="goTo('about')">
+            <v-tab v-if="!activate" @click="goTo('about')">
               <v-icon class="mr-2">mdi-information-outline</v-icon> À propos
             </v-tab>
           </v-tabs>
@@ -33,7 +36,7 @@
               mdi-discord
             </v-icon>
           </v-btn>
-          <v-btn color="primary" @click="goTo('download')">
+          <v-btn v-if="!activate" color="primary" @click="goTo('download')">
             <v-icon class="mr-2">mdi-download</v-icon> Télécharger le launcher
           </v-btn>
         </v-app-bar>
@@ -63,13 +66,19 @@
                 </v-list-item-icon>
                 <v-list-item-title>Mods</v-list-item-title>
               </v-list-item>
-              <v-list-item @click="goTo('about')">
+              <v-list-item @click="goTo('objectives')">
+                <v-list-item-icon>
+                  <v-icon>mdi-flag</v-icon>
+                </v-list-item-icon>
+                <v-list-item-title>Objectifs</v-list-item-title>
+              </v-list-item>
+              <v-list-item v-if="!activate" @click="goTo('about')">
                 <v-list-item-icon>
                   <v-icon>mdi-information-outline</v-icon>
                 </v-list-item-icon>
                 <v-list-item-title>À propos</v-list-item-title>
               </v-list-item>
-              <v-list-item @click="goTo('download')">
+              <v-list-item v-if="!activate" @click="goTo('download')">
                 <v-list-item-icon>
                   <v-icon>mdi-download</v-icon>
                 </v-list-item-icon>
@@ -81,6 +90,20 @@
         <Nuxt />
       </v-card>
     </v-main>
+    <v-footer
+      dark
+      padless
+    >
+      <v-card
+        class="flex"
+        flat
+        tile
+      >
+        <v-card-text class="py-2 white--text text-center">
+          {{ new Date().getFullYear() }} — <strong>Valandir</strong>
+        </v-card-text>
+      </v-card>
+    </v-footer>
   </v-app>
 </template>
 
@@ -91,6 +114,7 @@ import { Component, Vue } from 'vue-property-decorator'
 export default class Default extends Vue {
   drawer = false
   group = null
+  activate = true
 
   goTo (route: string) {
     this.$router.push(`/${route}`)
