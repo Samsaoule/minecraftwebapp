@@ -19,6 +19,10 @@ export default {
       { rel: 'stylesheet', type: 'text/css', href: 'http://fonts.cdnfonts.com/css/minecrafter-alt' }
     ]
   },
+  
+  router: {
+    mode: 'hash',
+  },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
