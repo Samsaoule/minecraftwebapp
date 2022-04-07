@@ -35,27 +35,28 @@ export default class ObjectivesSection extends Vue {
       {
         title: 'Developpons l\'ile tous ensemble',
         description: `Qui sommes-nous ? De valeureuses personnes venues de tous horizons pour explorer et s'installer sur une île aux milles couleurs ! <br>
-        Vous devrez vous installer pour permettre à vous et à d'autres colons de prospérer.<br>Développez l'île et son économie ! Ce sera crucial pour garantir votre survie. 😈`,
+        Vous devrez vous installer pour permettre à vous et à d'autres colons de prospérer.<br><span class="cyan--text">Développez l'île et son économie !</span> Ce sera crucial pour garantir votre survie. 😈`,
         imageSrc: './objective-develop.png',
       },
       {
         title: 'Explorer et combattre',
         description: `Un village a été établi par les premiers colons, entouré de grands murs en pierre car ce monde est certes très intéressant, il n'en reste pas moins
           hostile.<br>
-          En effet, certaines zones renferme des monstres divers et variés, des donjons gardés par de terribles ennemis à abattre mais également certaines zones reculées où
-          explorer vous en apprendra plus sur ce qu'il est arrivé aux premiers voyageurs. 🏹`,
+          En effet, certaines zones renferme des <span class="red--text">monstres divers et variés</span>, des <span class="red--text">donjons</span> gardés par de terribles
+          ennemis à abattre mais également certaines zones reculées où
+          <span class="red--text">explorer vous en apprendra plus</span> sur ce qu'il est arrivé aux premiers voyageurs. 🏹`,
         imageSrc: './objective-monsters.png',
       },
       {
         title: 'Accumuler un max de ressources',
-        description: `Un portail a été découvert sur l'île. Son utilité ? Permettre de rejoindre une dimension parralèle pour aller y piller toutes les ressources !<br>
+        description: `Un portail a été découvert sur l'île. Son utilité ? Permettre de <span class="green--text">rejoindre une dimension parralèle pour aller y piller toutes les ressources</span> !<br>
         Faites-vous plaisir, parce que sa particularité, c'est de se régénérer à intervalles réguliers. 😇`,
         imageSrc: './objective-resources.png',
       },
       {
         title: 'De nombreux events',
-        description: `Un concours de construction, des combats d'arènes, une chasse aux oeufs de Pâques... De nombreux évènements vous attendent dans ce monde.<br>
-        Et pour les grands gagnants, de belles récompenses ! 🎉`,
+        description: `Un <span class="orange--text">concours de construction</span>, des <span class="orange--text">combats d'arènes</span>, une <span class="orange--text">chasse aux oeufs de Pâques</span>... De nombreux évènements vous attendent dans ce monde.<br>
+        Et pour les grands gagnants, <span class="orange--text">de belles récompenses</span> ! 🎉`,
         imageSrc: './objective-event.webp',
       },
     ]
@@ -68,34 +69,6 @@ export default class ObjectivesSection extends Vue {
 </script>
 
 <style lang="scss">
-.section-2 {
-  width: 100vw;
-}
-
-.minecrafter-section-title {
-  font-family: "Minecrafter",serif;
-  font-size: 55px;
-  -webkit-text-stroke: 2px #000000;
-}
-
-.minecrafter-section-subtitle {
-  font-family: "Minecrafter",serif;
-  font-size: 30px;
-  -webkit-text-stroke: 2px #000000;
-}
-
-.what-text-section {
-  font-size: 35px;
-}
-
-.border-section-text {
-  -webkit-text-stroke: 2px #000000;
-}
-
-.bg-color-section {
-  background-color: black;
-}
-
 .objective-description {
   font-size: 1.075rem;
   font-weight: 500;
