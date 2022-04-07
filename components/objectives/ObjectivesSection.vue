@@ -97,7 +97,7 @@ export default class ObjectivesSection extends Vue {
 }
 
 .objective-description {
-  font-size: 0.975rem;
+  font-size: 1.075rem;
   font-weight: 500;
   letter-spacing: .009375em;
 }
