@@ -18,7 +18,7 @@
             <v-tab @click="goTo('objectives')">
               <v-icon class="mr-2">mdi-flag</v-icon> Objectifs
             </v-tab>
-            <v-tab @click="goTo('mods')">
+            <v-tab v-if="!activate" @click="goTo('mods')">
               <v-icon class="mr-2">mdi-playlist-star</v-icon> Mods
             </v-tab>
             <v-tab v-if="!activate" @click="goTo('about')">
@@ -60,7 +60,7 @@
                 </v-list-item-icon>
                 <v-list-item-title>Accueil</v-list-item-title>
               </v-list-item>
-              <v-list-item @click="goTo('mods')">
+              <v-list-item v-if="!activate" @click="goTo('mods')">
                 <v-list-item-icon>
                   <v-icon>mdi-playlist-star</v-icon>
                 </v-list-item-icon>
