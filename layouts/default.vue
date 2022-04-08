@@ -18,7 +18,7 @@
             <v-tab @click="goTo('objectives')">
               <v-icon class="mr-2">mdi-flag</v-icon> Objectifs
             </v-tab>
-            <v-tab v-if="!activate" @click="goTo('mods')">
+            <v-tab @click="goTo('mods')">
               <v-icon class="mr-2">mdi-playlist-star</v-icon> Mods
             </v-tab>
             <v-tab v-if="!activate" @click="goTo('about')">
@@ -31,6 +31,7 @@
             class="mx-4 white--text"
             fab
             text
+            @click="redirectDiscord"
           >
             <v-icon color="#738ADB" large dark>
               mdi-discord
@@ -60,7 +61,7 @@
                 </v-list-item-icon>
                 <v-list-item-title>Accueil</v-list-item-title>
               </v-list-item>
-              <v-list-item v-if="!activate" @click="goTo('mods')">
+              <v-list-item @click="goTo('mods')">
                 <v-list-item-icon>
                   <v-icon>mdi-playlist-star</v-icon>
                 </v-list-item-icon>
@@ -118,6 +119,10 @@ export default class Default extends Vue {
 
   goTo (route: string) {
     this.$router.push(`/${route}`)
+  }
+
+  redirectDiscord () {
+    window.open('https://discord.gg/hGjxxRcG6Y', '_blank')
   }
 
 }

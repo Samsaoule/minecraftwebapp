@@ -42,7 +42,7 @@ export default class ObjectivesSection extends Vue {
         title: 'Explorer et combattre',
         description: `Un village a été établi par les premiers colons, entouré de grands murs en pierre car ce monde est certes très intéressant, il n'en reste pas moins
           hostile.<br>
-          En effet, certaines zones renferme des <span class="red--text">monstres divers et variés</span>, des <span class="red--text">donjons</span> gardés par de terribles
+          En effet, certaines zones renferme des <span class="red--text">monstres divers et variés (boss)</span>, des <span class="red--text">donjons</span> gardés par de terribles
           ennemis à abattre mais également certaines zones reculées où
           <span class="red--text">explorer vous en apprendra plus</span> sur ce qu'il est arrivé aux premiers voyageurs. 🏹`,
         imageSrc: './objective-monsters.png',
