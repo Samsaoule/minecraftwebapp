@@ -15,7 +15,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', type: 'text/css', href: 'http://fonts.cdnfonts.com/css/minecrafter-alt' }
+      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.cdnfonts.com/css/minecrafter-alt' }
     ]
   },
 
@@ -41,6 +41,10 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
   ],
+  
+  generate: {
+    fallback: true
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
