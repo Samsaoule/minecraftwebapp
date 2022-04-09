@@ -22,7 +22,7 @@
         </div>
       </div>
     </div>
-    <v-divider class="mt-8 mb-6"></v-divider>
+    <v-divider class="mb-6"></v-divider>
 
     <div class="minecrafter-section-subtitle text-center mx-2">
       Autres mods
