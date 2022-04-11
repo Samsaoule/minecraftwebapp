@@ -3,6 +3,7 @@
     <v-col>
       <TitleSection></TitleSection>
       <ForWhatSection class="py-8"></ForWhatSection>
+      <ProposedBySection></ProposedBySection>
       <ButAlsoSection></ButAlsoSection>
       <HowSection class="py-8"></HowSection>
     </v-col>
@@ -15,8 +16,9 @@ import TitleSection from "~/components/index/TitleSection.vue";
 import ForWhatSection from "~/components/index/ForWhatSection.vue";
 import ButAlsoSection from "~/components/index/ButAlsoSection.vue";
 import HowSection from "~/components/index/HowSection.vue";
+import ProposedBySection from "~/components/index/ProposedBySection.vue";
 @Component({
-  components: {HowSection, ButAlsoSection, ForWhatSection, TitleSection}
+  components: {ProposedBySection, HowSection, ButAlsoSection, ForWhatSection, TitleSection}
 })
 export default class Index extends Vue {
 

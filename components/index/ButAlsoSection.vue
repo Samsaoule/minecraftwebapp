@@ -6,8 +6,8 @@
       </div>
       <div class="d-flex justify-space-around mt-8">
         <v-card min-width="250px" min-height="100px">
-          <div class="minecrafter-butalso-title-card mt-6">89</div>
-          <div class="minecrafter-butalso-subtitle-card mb-8">mods actifs</div>
+          <div class="minecrafter-butalso-title-card mt-6">PLEINS</div>
+          <div class="minecrafter-butalso-subtitle-card mb-8">de mods actifs</div>
         </v-card>
 
         <v-card min-width="250px" min-height="100px">
