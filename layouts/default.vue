@@ -37,7 +37,7 @@
               mdi-discord
             </v-icon>
           </v-btn>
-          <v-btn v-if="!activate" color="primary" @click="goTo('download')">
+          <v-btn color="primary" @click="goTo('download')">
             <v-icon class="mr-2">mdi-download</v-icon> Télécharger le launcher
           </v-btn>
         </v-app-bar>
@@ -79,7 +79,7 @@
                 </v-list-item-icon>
                 <v-list-item-title>À propos</v-list-item-title>
               </v-list-item>
-              <v-list-item v-if="!activate" @click="goTo('download')">
+              <v-list-item @click="goTo('download')">
                 <v-list-item-icon>
                   <v-icon>mdi-download</v-icon>
                 </v-list-item-icon>

@@ -1,20 +1,18 @@
 <template>
   <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-
-      <v-card>
-        Download
-      </v-card>
+    <v-col>
+      <DownloadSection></DownloadSection>
     </v-col>
   </v-row>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-
-@Component
+import DownloadSection from "~/components/download/DownloadSection.vue";
+@Component({
+  components: {DownloadSection}
+})
 export default class Download extends Vue {
-  myDataProperty = 'Data Property'
 
 }
 </script>
