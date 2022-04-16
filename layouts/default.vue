@@ -98,12 +98,6 @@
                 </v-list-item-icon>
                 <v-list-item-title>À propos</v-list-item-title>
               </v-list-item>
-              <v-list-item to="download" nuxt>
-                <v-list-item-icon>
-                  <v-icon>mdi-download</v-icon>
-                </v-list-item-icon>
-                <v-list-item-title>Télécharger</v-list-item-title>
-              </v-list-item>
             </v-list-item-group>
           </v-list>
         </v-navigation-drawer>
