@@ -142,7 +142,7 @@ export default class About extends Vue {
   }
 
   get profileSrc () {
-    return './profile/'
+    return '/profile/'
   }
 }
 </script>
