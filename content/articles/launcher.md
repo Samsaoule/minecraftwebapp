@@ -5,7 +5,7 @@ Avant toute chose, vous devrez télécharger la version Java disponible via le b
 
 ## Téléchargement du launcher
 Après avoir installé Java sur votre machine, vous devez télécharger le launcher Minecraft Valandir
-via le bouton ci-dessus.
+via le bouton ci-dessus. Si vous avez déjà Java, vous devez quand même l'installer !
 
 <div class="mt-8"></div>
 
