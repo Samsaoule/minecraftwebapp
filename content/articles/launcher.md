@@ -13,12 +13,12 @@ via le bouton ci-dessus.
 Une fois le launcher téléchargé, lancez le .jar que vous avez préalablement téléchargé.
 Cette fenêtre va s'ouvrir : 
 
-<v-img width="800px" contain src="/articles/launcher/launcher.png"></v-img><br>
+<img width="800px" style="background-size: contain;" src="/articles/launcher/launcher.png"></img><br>
 
 Avant de continuer, cliquez sur "Options" et réglez la valeur de "Maximum Memory" en fonction de
 votre RAM. 
 
-<v-img width="800px" contain src="/articles/launcher/ram.png"></v-img><br>
+<img width="800px" style="background-size: contain;" src="/articles/launcher/ram.png"></imgg><br>
 
 Pour connaitre la RAM de votre PC, rendez-vous dans votre Explorateur de fichiers (Windows) -> Clic droit sur
 "Ce PC" puis cliquez sur "Propriétés". Regardez le nombre affiché à côté de "Mémoire RAM installée".
@@ -31,7 +31,7 @@ Si votre RAM est à au moins 16Go, on vous recommande une valeur de 8000 ou plus
 
 Une fois la configuration RAM de faite, cliquez sur "Launch" en bas à droite. Cette popup va s'ouvrir :
 
-<v-img width="800px" contain src="/articles/launcher/login.png"></v-img><br>
+<img width="800px" style="background-size: contain;" src="/articles/launcher/login.png"></imgg><br>
 
 Cliquez sur "Add Microsoft account" et connectez-vous à votre compte Microsoft lié à votre Minecraft.
 
@@ -46,7 +46,7 @@ Si votre compte Microsoft a bien été ajouté, vous verrez votre compte avec la
 ## Fonctionnalités optionnelles
 Une autre popup va s'afficher. Elle présente plusieurs options :
 
-<v-img width="800px" contain src="/articles/launcher/features.png"></v-img><br>
+<img width="800px" style="background-size: contain;" src="/articles/launcher/features.png"></imgg><br>
 
 - "Entity Culling" - Mod qui améliore la gestion de la RAM de votre jeu. <span style="color: green; font-weight: bold;">Très conseillé</span>
 - "Optifine" - Permet d'optimiser votre Minecraft et de permettre notamment l'installation de shaders pour embellir votre jeu. <span style="color: orange; font-weight: bold;">Conseillé pour les plutôt bonnes configs</span>
@@ -112,5 +112,5 @@ Le serveur multijoueur est déjà dans la liste des serveurs. Double-cliquez des
 
 Et voilà, vous êtes sur le serveur ! Mais le tuto n'est pas fini, si vous voulez configurer votre Voicechat ainsi que claim vos habitations, ne vous arrêtez pas là !
 
-<v-img width="800px" contain src="/articles/launcher/ingame.png"></v-img>
+<img width="800px" style="background-size: contain;" src="/articles/launcher/ingame.png"></imgg>
 
