@@ -1,6 +1,14 @@
 <template>
   <v-app dark>
     <v-main>
+      <v-overlay
+        :opacity="1"
+        :value="displayOverlay"
+      >
+        <v-progress-circular indeterminate size="64">
+
+        </v-progress-circular>
+      </v-overlay>
       <v-card
         v-if="!$vuetify.breakpoint.smAndDown"
         color="23272A"
@@ -13,7 +21,7 @@
           <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
 
           <v-tabs align-with-title :value="$route.name">
-            <v-tab to="/" value="" nuxt>
+            <v-tab to="/" value="/" nuxt exact>
               <v-icon class="mr-2">mdi-home</v-icon> Accueil
             </v-tab>
             <v-tab to="/map" value="map" nuxt>
@@ -138,9 +146,14 @@ export default class Default extends Vue {
   drawer = false
   group = null
   activate = true
+  displayOverlay = true
+
+  mounted () {
+    this.displayOverlay = false
+  }
 
   goToDownload () {
-    this.$router.push('download')
+    this.$router.push('/download')
   }
 
   redirectDiscord () {
