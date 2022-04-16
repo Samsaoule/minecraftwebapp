@@ -3,12 +3,12 @@ Vous souhaitez créer votre propre team avec un nom personnalisé et y inviter v
 
 Pour ce faire, ouvrez votre inventaire et cliquez sur l'icone multicolore en haut à gauche de l'écran.
 
-<v-img width="800px" contain src="./articles/team/team-inventory.png"></v-img><br>
+<v-img width="800px" contain src="/articles/team/team-inventory.png"></v-img><br>
 
 Entrez ensuite un nom de team, une description et cochez les personnes que vous
 souhaitez inviter initialement dans votre team.
 
-<v-img width="800px" contain src="./articles/team/team-create-new.png"></v-img><br>
+<v-img width="800px" contain src="/articles/team/team-create-new.png"></v-img><br>
 
 Une fois cela fait, votre team est créé !
 
@@ -48,7 +48,7 @@ Attention, si vous quittez votre team et que d'autres personnes en font partie, 
 Vous pouvez gérer quelques paramètres de votre team en allant sur l'interface de votre team (icone multicolore) puis en cliquant
 sur la roue dentée :
 
-<v-img width="800px" contain src="./articles/team/team-config.png"></v-img>
+<v-img width="800px" contain src="/articles/team/team-config.png"></v-img>
 
 <div class="mt-8"></div>
 
@@ -78,13 +78,13 @@ claims seront fait au nom de la team et le nombre de chunks disponible sera de 2
 
 Pour ajouter de nouveaux claims sur la map, cliquez sur l'icone de map en haut à gauche lorsque vous êtes dans votre inventaire.
 
-<v-img width="800px" contain src="./articles/team/team-inventory.png"></v-img><br>
+<v-img width="800px" contain src="/articles/team/team-inventory.png"></v-img><br>
 
 Une fois sur la map, re-cliquez de nouveau sur l'icone de la map :
 
-<v-img width="800px" contain src="./articles/team/team-map.png"></v-img><br>
+<v-img width="800px" contain src="/articles/team/team-map.png"></v-img><br>
 
 Et vous voilà sur l'interface pour poser de nouveaux chunks. Pour poser un nouveau chunk, faites un clic gauche
 sur une case (chunk) de votre choix. Pour retirer ce claim, faites clic droit sur un claim existant.
 
-<v-img width="800px" contain src="./articles/team/team-claim-chunks.png"></v-img><br>
+<v-img width="800px" contain src="/articles/team/team-claim-chunks.png"></v-img><br>
