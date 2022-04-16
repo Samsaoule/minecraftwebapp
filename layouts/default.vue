@@ -44,7 +44,7 @@
               mdi-discord
             </v-icon>
           </v-btn>
-          <v-btn color="primary" @click="goTo('download')">
+          <v-btn color="primary" @click="goToDownload">
             <v-icon class="mr-2">mdi-download</v-icon> Télécharger le launcher
           </v-btn>
         </v-app-bar>
@@ -144,6 +144,10 @@ export default class Default extends Vue {
   drawer = false
   group = null
   activate = true
+
+  goToDownload () {
+    this.$router.push('download')
+  }
 
   redirectDiscord () {
     window.open('https://discord.gg/hGjxxRcG6Y', '_blank')
