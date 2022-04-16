@@ -71,6 +71,12 @@ Rendez-vous dans le menu "Options". Pour une expérience optimale, suivez les in
     </ul>
   </li>
   <li>
+    Menu "ResourcesPacks" :
+    <ul>
+      <li><b>Pour ceux qui ont choisi l'option "resourcePacks"</b> : Mettre "FreshAnimations" et "InvisibleWorldBorder"</li>
+    </ul>
+  </li>
+  <li>
     Menu "Video Settings" :
     <ul>
       <li>
