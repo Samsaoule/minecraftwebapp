@@ -51,7 +51,7 @@ Une autre popup va s'afficher. Elle présente plusieurs options :
 - "Resourcepacks" - Amélioration visuelle de votre jeu. <span style="color: green; font-weight: bold;">Très conseillé</span>
 - "Optifine" - Permet d'optimiser votre Minecraft et de permettre notamment l'installation de shaders pour embellir votre jeu. <span style="color: orange; font-weight: bold;">Conseillé pour les plutôt bonnes configs</span>
 - "Shader" - Embellit votre jeu Minecraft en améliorant notamment les jeux d'ombres, l'eau, la végétation... <span style="color: red; font-weight: bold;">Conseillé uniquement pour les bonnes configs</span>
-- "WorldEditUi" <span style="color: green; font-weight: bold;">A ignorer</span>
+- "WorldEditUi" <span style="color: red; font-weight: bold;">A ignorer</span>
 
 Une fois ces différents réglages effectués, cliquez sur OK. <u>Le jeu va se lancer</u>.
 La première fois, l'attente sera plus longue vu que certains fichiers vont se télécharger. <b>Attendez</b>.
