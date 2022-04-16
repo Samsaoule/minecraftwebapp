@@ -2,6 +2,7 @@
   <v-app dark>
     <v-main>
       <v-card
+        v-if="!$vuetify.breakpoint.smAndDown"
         color="23272A"
         class="mx-auto overflow-hidden"
       >
@@ -11,17 +12,23 @@
         >
           <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
 
-          <v-tabs align-with-title>
-            <v-tab @click="goTo('')">
+          <v-tabs align-with-title :value="$route.name">
+            <v-tab to="/" value="" nuxt>
               <v-icon class="mr-2">mdi-home</v-icon> Accueil
             </v-tab>
-            <v-tab @click="goTo('objectives')">
+            <v-tab to="/map" value="map" nuxt>
+              <v-icon class="mr-2">mdi-map</v-icon> Carte
+            </v-tab>
+            <v-tab to="/rules" value="rules" nuxt>
+              <v-icon class="mr-2">mdi-ruler</v-icon> Règles
+            </v-tab>
+            <v-tab to="/objectives" value="objectives" nuxt>
               <v-icon class="mr-2">mdi-flag</v-icon> Objectifs
             </v-tab>
-            <v-tab @click="goTo('mods')">
+            <v-tab to="/mods" value="mods" nuxt>
               <v-icon class="mr-2">mdi-playlist-star</v-icon> Mods
             </v-tab>
-            <v-tab v-if="!activate" @click="goTo('about')">
+            <v-tab to="/about" value="about" nuxt>
               <v-icon class="mr-2">mdi-information-outline</v-icon> À propos
             </v-tab>
           </v-tabs>
@@ -55,31 +62,43 @@
               v-model="group"
               active-class="primary--text text--accent-4"
             >
-              <v-list-item @click="goTo('')">
+              <v-list-item to="/" nuxt>
                 <v-list-item-icon>
                   <v-icon>mdi-home</v-icon>
                 </v-list-item-icon>
                 <v-list-item-title>Accueil</v-list-item-title>
               </v-list-item>
-              <v-list-item @click="goTo('mods')">
+              <v-list-item to="map" nuxt>
                 <v-list-item-icon>
-                  <v-icon>mdi-playlist-star</v-icon>
+                  <v-icon>mdi-map</v-icon>
                 </v-list-item-icon>
-                <v-list-item-title>Mods</v-list-item-title>
+                <v-list-item-title>Carte</v-list-item-title>
               </v-list-item>
-              <v-list-item @click="goTo('objectives')">
+              <v-list-item to="rules" nuxt>
+                <v-list-item-icon>
+                  <v-icon>mdi-ruler</v-icon>
+                </v-list-item-icon>
+                <v-list-item-title>Règles</v-list-item-title>
+              </v-list-item>
+              <v-list-item to="objectives" nuxt>
                 <v-list-item-icon>
                   <v-icon>mdi-flag</v-icon>
                 </v-list-item-icon>
                 <v-list-item-title>Objectifs</v-list-item-title>
               </v-list-item>
-              <v-list-item v-if="!activate" @click="goTo('about')">
+              <v-list-item to="mods" nuxt>
+                <v-list-item-icon>
+                  <v-icon>mdi-playlist-star</v-icon>
+                </v-list-item-icon>
+                <v-list-item-title>Mods</v-list-item-title>
+              </v-list-item>
+              <v-list-item to="about" nuxt>
                 <v-list-item-icon>
                   <v-icon>mdi-information-outline</v-icon>
                 </v-list-item-icon>
                 <v-list-item-title>À propos</v-list-item-title>
               </v-list-item>
-              <v-list-item @click="goTo('download')">
+              <v-list-item to="download" nuxt>
                 <v-list-item-icon>
                   <v-icon>mdi-download</v-icon>
                 </v-list-item-icon>
@@ -89,6 +108,15 @@
           </v-list>
         </v-navigation-drawer>
         <Nuxt />
+      </v-card>
+      <v-card
+        v-else
+        color="23272A"
+        class="mx-auto overflow-hidden fill-height d-flex align-center justify-center"
+      >
+        <div class="text-center">
+          🚧 Mode mobile en cours de construction 🚧 <br> Allez sur PC pour profiter du site
+        </div>
       </v-card>
     </v-main>
     <v-footer
@@ -117,13 +145,8 @@ export default class Default extends Vue {
   group = null
   activate = true
 
-  goTo (route: string) {
-    this.$router.push(`/${route}`)
-  }
-
   redirectDiscord () {
     window.open('https://discord.gg/hGjxxRcG6Y', '_blank')
   }
-
 }
 </script>

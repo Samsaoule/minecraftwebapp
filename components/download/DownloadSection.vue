@@ -7,20 +7,31 @@
     </v-parallax>
 
     <div class="my-8">
-      <div class="minecrafter-section-subtitle text-center mx-2 mb-4">
+      <div class="minecrafter-section-subtitle text-center mx-2">
         Ressources
       </div>
       <div class="d-flex justify-center">
-        <v-btn class="mx-4" x-large color="primary">
+        <v-checkbox
+          v-model="rulesReaded"
+          label="J'ai bien pris connaissance des règles"
+        ></v-checkbox>
+      </div>
+      <div class="d-flex justify-center">
+        <v-btn :disabled="!rulesReaded" class="mx-4" x-large color="primary" @click="downloadLauncher">
           <v-icon class="mr-2">mdi-download</v-icon> Launcher
         </v-btn>
-        <v-btn class="mx-4" x-large color="primary">
+        <v-btn class="mx-4" x-large color="primary" @click="downloadJava">
           <v-icon class="mr-2">mdi-download</v-icon> Java
         </v-btn>
       </div>
     </div>
 
-    <v-container>
+    <v-divider></v-divider>
+
+    <v-container class="mt-5">
+      <div class="minecrafter-section-subtitle text-center mx-2 mb-4">
+        Comment jouer
+      </div>
       <div class="mx-16 my-6" v-for="(article, i) in articles" :key="i">
         <v-expansion-panels accordion>
           <v-expansion-panel>
@@ -49,6 +60,7 @@ export default class DownloadSection extends Vue {
   launcherArticleContent = {}
   teamArticleContent = {}
   microArticleContent = {}
+  rulesReaded = false
 
   async mounted () {
     await this.getLauncherArticle()
@@ -66,6 +78,13 @@ export default class DownloadSection extends Vue {
     this.microArticleContent = await this.$content('articles/micro').fetch()
   }
 
+  downloadLauncher () {
+    window.open('https://valandirmc.s3.fr-par.scw.cloud/launcher-bootstrap-1.0.2.jar')
+  }
+
+  downloadJava () {
+    window.open('https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.exe')
+  }
 
   get articles () {
     return [

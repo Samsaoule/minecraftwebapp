@@ -14,9 +14,9 @@
           {{ objective.title }}
         </div>
         <div class="d-flex justify-space-around align-center">
-          <v-card v-if="isEven(i)" width="625px" class="pa-6 objective-description" v-html="objective.description"></v-card>
-          <v-img class="flex-grow-0" width="350px" height="350px" contain :src="objective.imageSrc"></v-img>
-          <v-card v-if="!isEven(i)" width="625px" class="pa-6 objective-description" v-html="objective.description"></v-card>
+          <v-sheet rounded v-if="isEven(i)" width="625px" class="pa-6 objective-description" v-html="objective.description"></v-sheet>
+          <v-img class="flex-grow-0" width="350px" height="350px" contain :src="objective.imageSrc"/>
+          <v-sheet rounded v-if="!isEven(i)" width="625px" class="pa-6 objective-description" v-html="objective.description"></v-sheet>
         </div>
         <v-divider v-if="objectives.length - 1 !== i" class="mt-12"></v-divider>
       </div>

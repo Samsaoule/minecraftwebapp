@@ -1,6 +1,6 @@
 <template>
   <v-card color="#141414" class="section-2">
-    <v-parallax height="200" class="section-1" src="./mods-banner.png">
+    <v-parallax height="200" class="section-1" src="/mods-banner.png">
       <div class="minecrafter-section-title text-center mx-2">
         Mods
       </div>
@@ -11,14 +11,14 @@
           <div class="minecrafter-section-subtitle text-center mx-2">
             {{ mod.title }}
           </div>
-          <v-card width="625px" class="pa-6 mt-6 objective-description" v-html="mod.description"></v-card>
+          <v-sheet rounded width="625px" class="pa-6 mt-6 objective-description" v-html="mod.description"></v-sheet>
         </div>
         <v-img class="flex-grow-0" style="width: 50%;" height="435" :src="mod.imageSrc"></v-img>
         <div v-if="!isEven(i)" class="ma-auto">
           <div class="minecrafter-section-subtitle text-center mx-2">
             {{ mod.title }}
           </div>
-          <v-card width="625px" class="pa-6 mt-6 objective-description" v-html="mod.description"></v-card>
+          <v-sheet rounded width="625px" class="pa-6 mt-6 objective-description" v-html="mod.description"></v-sheet>
         </div>
       </div>
     </div>
@@ -56,7 +56,7 @@
       </v-slide-item>
     </v-slide-group>
 
-    <v-parallax height="100" class="section-1" src="./mods-banner.png"></v-parallax>
+    <v-parallax height="100" class="section-1" src="/mods-banner.png"></v-parallax>
   </v-card>
 </template>
 
@@ -181,7 +181,7 @@ export default class ModsSection extends Vue {
   }
 
   profileSrc (imageName: string) {
-    return `./mods/${imageName}`
+    return `/mods/${imageName}`
   }
 }
 </script>

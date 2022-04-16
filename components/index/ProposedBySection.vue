@@ -65,7 +65,6 @@ export default class ProposedBySection extends Vue {
 
   redirectToTwitch (url : string) {
     return window.open(url, '_blank')
-
   }
 }
 </script>
