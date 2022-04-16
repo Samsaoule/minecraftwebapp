@@ -85,6 +85,7 @@ Un chargement long va apparaitre, c'est normal, attendez que le chargement se fa
 
   <li>Menu "Controls" :</li>
     <ul>
+      <li>Vous verrez des touches en rouge, ne vous en occupez pas, c'est pas grave !</li>
       <li>Auto-jump : OFF</li>
       <li>Key Binds : </li>
       <ul>
