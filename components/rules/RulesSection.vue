@@ -79,6 +79,7 @@
           <v-list-item-content>
             <v-list-item-title class="text-h5 font-weight-bold">Claims</v-list-item-title>
             Pour plus de sûreté, vous disposez de 25 claims que vous pouvez utiliser à titre personnel ou cumuler en team. Il est interdit d’entourer d’autres joueurs avec les claims.
+            Vous devez également supprimer vos claims si vous partez de votre équipe ou changez de team.
           </v-list-item-content>
         </v-list-item>
 
@@ -111,6 +112,36 @@
             Le PVP est autorisé, cependant veillez à ne pas harceler les joueurs. Si vous êtes victime ou que vous vous sentez concerné par ce genre de comportement, n’hésitez pas à en faire part au support. Ceci sera traité dans les plus brefs délais.
           </v-list-item-content>
         </v-list-item>
+
+        <v-list-item>
+          <v-list-item-icon class="my-auto">
+            <v-icon color="pink">mdi-star</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title class="text-h5 font-weight-bold">Triche</v-list-item-title>
+            Toute forme de triche telle quelle soit (Usebug, plugins...) est formellement interdite.
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item>
+          <v-list-item-icon class="my-auto">
+            <v-icon color="pink">mdi-star</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title class="text-h5 font-weight-bold">Streamhack</v-list-item-title>
+            Le streamhack est interdit chez tous les streamers tels qu'ils soient sur le serveur.
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item>
+          <v-list-item-icon class="my-auto">
+            <v-icon color="pink">mdi-star</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+              <v-list-item-title class="text-h5 font-weight-bold">Fermes à mobs</v-list-item-title>
+            Il est formellement interdit de faire des fermes à mobs sur la map de build.
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-container>
 
@@ -134,6 +165,16 @@
           <v-list-item-content>
             <v-list-item-title class="text-h5 font-weight-bold">Sanctions</v-list-item-title>
             Tout dépassement ou infraction à ces règles peut entraîner une sanction allant de la réprimande au bannissement du jeu et du Discord selon la communauté.
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item>
+          <v-list-item-icon class="my-auto">
+            <v-icon color="pink">mdi-star</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title class="text-h5 font-weight-bold">Mise au point</v-list-item-title>
+            Les règles et sanctions peuvent changer. Les joueurs se doivent de se mettre au courant de chaque changement.
           </v-list-item-content>
         </v-list-item>
       </v-list>
