@@ -142,6 +142,26 @@
             Il est formellement interdit de faire des fermes à mobs sur la map de build.
           </v-list-item-content>
         </v-list-item>
+
+        <v-list-item>
+          <v-list-item-icon class="my-auto">
+            <v-icon color="pink">mdi-star</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title class="text-h5 font-weight-bold">Villageois</v-list-item-title>
+            Il est formellement interdit de ramener des villageois de la map de build chez soi. Les villageois trouvés sur la map de farm est cependant autorisé.
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item>
+          <v-list-item-icon class="my-auto">
+            <v-icon color="pink">mdi-star</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title class="text-h5 font-weight-bold">Portails</v-list-item-title>
+            Il est formellement interdit de craft les blocs de portail du mod Cosmos.
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-container>
 
