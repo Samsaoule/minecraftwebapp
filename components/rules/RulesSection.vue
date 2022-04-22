@@ -148,8 +148,8 @@
             <v-icon color="pink">mdi-star</v-icon>
           </v-list-item-icon>
           <v-list-item-content>
-            <v-list-item-title class="text-h5 font-weight-bold">Villageois</v-list-item-title>
-            Il est formellement interdit de ramener des villageois de la map de build chez soi. Les villageois trouvés sur la map de farm est cependant autorisé.
+            <v-list-item-title class="text-h5 font-weight-bold">Villageois et animaux</v-list-item-title>
+            Il est formellement interdit de ramener des villageois et animaux de la capitale et du village de PNJ de la map de build chez soi. Les villageois trouvés sur la map de farm sont cependant autorisés.
           </v-list-item-content>
         </v-list-item>
 
