@@ -162,6 +162,26 @@
             Il est formellement interdit de craft les blocs de portail du mod Cosmos.
           </v-list-item-content>
         </v-list-item>
+
+        <v-list-item>
+          <v-list-item-icon class="my-auto">
+            <v-icon color="pink">mdi-star</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title class="text-h5 font-weight-bold">Commandes</v-list-item-title>
+            Il est formellement interdit d'utiliser quelconque commande que ce soit qui n'est pas cité dans la documentation.
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item>
+          <v-list-item-icon class="my-auto">
+            <v-icon color="pink">mdi-star</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title class="text-h5 font-weight-bold">Donjons</v-list-item-title>
+            Vous devez parcourir les donjons de manière normale et ne pas utiliser quelconque manière de sauter des étapes du donjon.
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-container>
 
